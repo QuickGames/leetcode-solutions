@@ -1,3 +1,12 @@
+package easy.p3952_trionic_array_i;
+
+/**
+ * @author QuickGames
+ * Difficulty: Easy
+ * Number: 3637
+ * Language: Java
+ * Topic: Mid Level, Array, Weekly Contest 461
+ */
 class Solution {
     public boolean isTrionic(int[] nums) {
         int phase = 0;

@@ -2,6 +2,9 @@ package medium.p50_powx_n;
 
 /**
  * @author QuickGames
+ * Difficulty: Medium
+ * Number: 50
+ * Language: Java
  * Topic: Math, Recursion
  */
 class Solution {

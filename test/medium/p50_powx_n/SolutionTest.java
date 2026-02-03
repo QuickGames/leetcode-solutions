@@ -10,8 +10,6 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@Tag("Math")
-@Tag("Recursion")
 @DisplayName("50. Pow(x, n)")
 class SolutionTest {
 

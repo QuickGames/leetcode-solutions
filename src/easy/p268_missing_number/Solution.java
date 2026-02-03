@@ -1,3 +1,14 @@
+package easy.p268_missing_number;
+
+import java.util.Arrays;
+
+/**
+ * @author QuickGames
+ * Difficulty: Easy
+ * Number: 268
+ * Language: Java
+ * Topic: Array, Hash Table, Math, Binary Search, Bit Manipulation, Sorting
+ */
 class Solution {
     public int missingNumber(int[] nums) {
         Arrays.sort(nums);
