@@ -1,0 +1,14 @@
+# IntelliJ IDEA файлы
+.idea/
+*.iml
+out/
+gen/
+
+drafts/
+
+# Компиляция Java
+*.class
+
+# Логи и временные файлы
+*.log
+.DS_Store
