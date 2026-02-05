@@ -1,0 +1,26 @@
+package java_problems.medium.p0050_powx_n;
+
+/**
+ * @author QuickGames
+ * Difficulty: Medium
+ * Number: 50
+ * Language: Java
+ * Topic: Math, Recursion
+ */
+class Solution {
+    public double myPow(double x, int n) {
+        double result = 1d;
+        long nl = Math.abs((long) n);
+        while (0 < nl) {
+            if (nl % 2 == 1) {
+                result *= x;
+                nl--;
+            } else {
+                x *= x;
+                nl /= 2;
+            }
+        }
+        if (n < 0) result = 1 / result;
+        return result;
+    }
+}
