@@ -1,5 +1,16 @@
+package java_problems.easy.p1448_maximum_69_number;
+
+/**
+ * @author QuickGames
+ * Difficulty: Easy
+ * Number: 1323
+ * Title: Maximum 69 Number
+ * Language: Java
+ * Topic: Mid Level, Math, Greedy, Weekly Contest 172
+ */
 class Solution {
-    public int maximum69Number (int num) {
+
+    public int maximum69Number(int num) {
         int lastN10 = 10000;
         for (int i = 3; 0 <= i; i--) {
             int n10 = pow10(i);
@@ -13,7 +24,7 @@ class Solution {
         }
         return num;
     }
-    
+
     private int pow10(int level) {
         int result = 1;
         for (int i = 0; i < level; i++) result *= 10;

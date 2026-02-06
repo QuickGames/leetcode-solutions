@@ -1,3 +1,15 @@
+package java_problems.medium.p3958_minimum_removals_to_balance_array;
+
+import java.util.Arrays;
+
+/**
+ * @author QuickGames
+ * Difficulty: Medium
+ * Number: 3634
+ * Title: Minimum Removals to Balance Array
+ * Language: Java
+ * Topic: Senior, Array, Sliding Window, Sorting, Biweekly Contest 162
+ */
 class Solution {
 
     public int minRemoval(int[] nums, int k) {

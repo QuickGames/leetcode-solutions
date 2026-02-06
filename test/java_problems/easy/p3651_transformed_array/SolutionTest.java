@@ -1,4 +1,4 @@
-package java_problems.easy.p3379;
+package java_problems.easy.p3651_transformed_array;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;

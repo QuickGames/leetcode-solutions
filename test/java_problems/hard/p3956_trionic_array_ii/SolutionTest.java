@@ -1,4 +1,4 @@
-package java_problems.hard.p3640;
+package java_problems.hard.p3956_trionic_array_ii;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -48,11 +48,11 @@ class SolutionTest {
     }
 
     static Stream<Arguments> largeArrayProvider() throws IOException {
-        return getLargeArrayProvider("test/java_problems/hard/p3640/data.csv");
+        return getLargeArrayProvider("test/java_problems/hard/p3956_trionic_array_ii/data.csv");
     }
 
     static Stream<Arguments> largeArrayProvider854() throws IOException {
-        return getLargeArrayProvider("test/java_problems/hard/p3640/data854.csv");
+        return getLargeArrayProvider("test/java_problems/hard/p3956_trionic_array_ii/data854.csv");
     }
 
     @ParameterizedTest

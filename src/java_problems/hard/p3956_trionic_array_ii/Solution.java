@@ -1,3 +1,16 @@
+package java_problems.hard.p3956_trionic_array_ii;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * @author QuickGames
+ * Difficulty: Hard
+ * Number: 3640
+ * Title: Trionic Array II
+ * Language: Java
+ * Topic: Senior Staff, Array, Dynamic Programming, Weekly Contest 461
+ */
 class Solution {
 
     public long maxSumTrionic(int[] nums) {
