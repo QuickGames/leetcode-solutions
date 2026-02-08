@@ -2,10 +2,10 @@
 
 [![LeetCode Stats](https://leetcard.jacoblin.cool/QuickGames?theme=dark&font=Recursive&border=0&colors=%231e1e2e%2C%2345475a%2C%23cdd6f4%2C%23FF7F50%2C%23fab387%2C%23a6e3a1%2C%23f9e2af%2C%23f38ba8)](https://leetcode.com/u/QuickGames/)
 <br>
-![Java](https://img.shields.io/badge/☕_Java-25-orange)
+![Java](https://img.shields.io/badge/☕_Java-26-orange)
 ![MySQL](https://img.shields.io/badge/MySQL-12-4479A1?logo=mysql&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-6-512BD4?logo=dotnet)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-6-4169E1?logo=postgresql&logoColor=white)
-![C#](https://img.shields.io/badge/C%23-5-512BD4?logo=dotnet)
 ![JS](https://img.shields.io/badge/JavaScript-2-F7DF1E?logo=javascript)
 ![MS SQL](https://img.shields.io/badge/🛢️MS_SQL-1-CC2927)
 ![Oracle](https://img.shields.io/badge/⭕️Oracle-1-ff4912)
@@ -67,3 +67,5 @@
 | 3640 | 🔴[Trionic Array II](https://leetcode.com/problems/trionic-array-ii/)                                                                           | [☕Java](src/java_problems/hard/p3956_trionic_array_ii/Solution.java)[🧪](test/java_problems/hard/p3956_trionic_array_ii/SolutionTest.java)                                                        | 📦Array, 📈Dynamic Programming / Senior Staff, [Weekly Contest 461](https://leetcode.com/contest/weekly-contest-461/)                                                       |   33 ms 15.96%    |  100.13 MB 39.36%  |
 |      |                                                                                                                                                 |                                                                                                                                                                                                   |                                                                                                                                                                             |                   |                    |
 | 1378 | 🟢[Replace Employee ID With The Unique Identifier](https://leetcode.com/problems/replace-employee-id-with-the-unique-identifier/)               | 🐳PostgreSQL                                                                                                                                                                                      | 🗄️Database                                                                                                                                                                 |   474 ms 39.82%   |                    |
+| 110  | 🟢[Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)                                                                   | ☕Java                                                                                                                                                                                             | 🌲Tree, 🪜Depth-First Search, 🌿Binary Tree                                                                                                                                 |    1 ms 30.78%    |  45.99 MB 10.71%   |
+| 104  | 🟢[Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)                                                   | 💠C#                                                                                                                                                                                              | 🌲Tree, 🪜Depth-First Search, 📡Breadth-First Search, 🌿Binary Tree                                                                                                         |  0 ms 100.00% 👏  | 43.68 MB 57.12% 👏 |

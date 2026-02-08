@@ -8,7 +8,7 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.stream.Stream;
 
-@DisplayName("3634. Minimum Removals to Balance Array")
+@DisplayName("1653. Minimum Deletions to Make String Balanced")
 class SolutionTest {
 
     static Stream<Arguments> provideData() {

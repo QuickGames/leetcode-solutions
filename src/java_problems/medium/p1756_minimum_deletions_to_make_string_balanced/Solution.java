@@ -49,11 +49,6 @@ class Solution {
             if (s.charAt(i) == a) result++;
         }
 
-        System.out.println("s: " + s);
-        System.out.println("iMin: " + iMin);
-        System.out.println("iMax: " + iMax);
-        System.out.println("result: " + result);
-
         return result;
     }
 

@@ -15,7 +15,6 @@ class Solution {
         sb.append("" + x);
         sb.reverse();
         String s = sb.toString().replace("-", "");
-        System.out.println(s);
         try {
             return Integer.valueOf(s) * isN;
         } catch (Exception e) {
