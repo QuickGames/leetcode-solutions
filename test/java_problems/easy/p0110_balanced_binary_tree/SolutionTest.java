@@ -1,4 +1,4 @@
-package java_problems.easy.p0110;
+package java_problems.easy.p0110_balanced_binary_tree;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
