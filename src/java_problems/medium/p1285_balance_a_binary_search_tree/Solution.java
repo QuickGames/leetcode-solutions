@@ -1,17 +1,16 @@
+package java_problems.medium.p1285_balance_a_binary_search_tree;
+
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+
 /**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
- * }
+ * @author QuickGames
+ * Difficulty: Medium
+ * Number: 1382
+ * Title: Balance a Binary Search Tree
+ * Language: Java
+ * Topic: Senior, Divide and Conquer, Greedy, Tree, Depth-First Search, Binary Search Tree, Binary Tree, Weekly Contest 180
  */
 class Solution {
 

@@ -1,4 +1,4 @@
-package java_problems.medium.p0649;
+package java_problems.medium.p0649_dota2_senate;
 
 /**
  * @author QuickGames
