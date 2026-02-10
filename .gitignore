@@ -5,6 +5,7 @@ out/
 gen/
 
 drafts/
+bench/
 
 # Компиляция Java
 *.class
