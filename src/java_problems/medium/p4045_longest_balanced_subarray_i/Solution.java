@@ -1,4 +1,4 @@
-package java_problems.medium.p3719;
+package java_problems.medium.p4045_longest_balanced_subarray_i;
 
 import java.util.ArrayList;
 import java.util.List;

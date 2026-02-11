@@ -1,3 +1,13 @@
+package java_problems.medium.p0948_sort_an_array;
+
+/**
+ * @author QuickGames
+ * Difficulty: Medium
+ * Number: 912
+ * Title: Sort an Array
+ * Language: Java
+ * Topic: Array, Divide and Conquer, Sorting, Heap (Priority Queue), Merge Sort, Bucket Sort, Radix Sort, Counting Sort
+ */
 class Solution {
 
     public int[] sortArray(int[] nums) {

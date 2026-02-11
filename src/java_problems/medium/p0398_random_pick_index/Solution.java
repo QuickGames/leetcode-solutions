@@ -1,4 +1,4 @@
-package java_problems.medium.p0398;
+package java_problems.medium.p0398_random_pick_index;
 
 import java.util.Random;
 
