@@ -1,9 +1,9 @@
 <h2><a href="https://leetcode.com/problems/random-pick-index">Random Pick Index</a></h2> <img src='https://img.shields.io/badge/Difficulty-Medium-orange' alt='Difficulty: Medium' /><hr><p>Given an integer array <code>nums</code> with possible <strong>duplicates</strong>, randomly output the index of a given <code>target</code> number. You can assume that the given target number must exist in the array.</p>
 
-<p>Implement the <code>Solution</code> class:</p>
+<p>Implement the <code>RandomizedSet</code> class:</p>
 
 <ul>
-	<li><code>Solution(int[] nums)</code> Initializes the object with the array <code>nums</code>.</li>
+	<li><code>RandomizedSet(int[] nums)</code> Initializes the object with the array <code>nums</code>.</li>
 	<li><code>int pick(int target)</code> Picks a random index <code>i</code> from <code>nums</code> where <code>nums[i] == target</code>. If there are multiple valid i&#39;s, then each index should have an equal probability of returning.</li>
 </ul>
 
@@ -12,13 +12,13 @@
 
 <pre>
 <strong>Input</strong>
-[&quot;Solution&quot;, &quot;pick&quot;, &quot;pick&quot;, &quot;pick&quot;]
+[&quot;RandomizedSet&quot;, &quot;pick&quot;, &quot;pick&quot;, &quot;pick&quot;]
 [[[1, 2, 3, 3, 3]], [3], [1], [3]]
 <strong>Output</strong>
 [null, 4, 0, 2]
 
 <strong>Explanation</strong>
-Solution solution = new Solution([1, 2, 3, 3, 3]);
+RandomizedSet solution = new RandomizedSet([1, 2, 3, 3, 3]);
 solution.pick(3); // It should return either index 2, 3, or 4 randomly. Each index should have equal probability of returning.
 solution.pick(1); // It should return 0. Since in the array only nums[0] is equal to 1.
 solution.pick(3); // It should return either index 2, 3, or 4 randomly. Each index should have equal probability of returning.

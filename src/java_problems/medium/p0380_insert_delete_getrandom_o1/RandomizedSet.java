@@ -1,3 +1,16 @@
+package java_problems.medium.p0380_insert_delete_getrandom_o1;
+
+import java.util.HashMap;
+import java.util.Random;
+
+/**
+ * @author QuickGames
+ * Difficulty: Medium
+ * Number: 380
+ * Title: Insert Delete GetRandom O(1)
+ * Language: Java
+ * Topic: Array, Hash Table, Math, Design, Randomized
+ */
 class RandomizedSet {
 
     private final Random random;
@@ -36,11 +49,3 @@ class RandomizedSet {
     }
 
 }
-
-/**
- * Your RandomizedSet object will be instantiated and called as such:
- * RandomizedSet obj = new RandomizedSet();
- * boolean param_1 = obj.insert(val);
- * boolean param_2 = obj.remove(val);
- * int param_3 = obj.getRandom();
- */

@@ -1,6 +1,17 @@
+package java_problems.medium.p3714;
+
+/**
+ * @author QuickGames
+ * Difficulty: Medium
+ * Number: 3714
+ * Title: Longest Balanced Substring II
+ * Language: Java
+ * Topic: Staff, Hash Table, String, Prefix Sum, Weekly Contest 471
+ */
 class Solution {
+
     public int longestBalanced(String s) {
- 
+
         if (s.isEmpty() || s.length() == 1) return s.length();
 
         int leftIndex = 0;
@@ -8,11 +19,11 @@ class Solution {
 
         int countChars = 0;
         int maxCharsInGroup = 0;
-        int[] chars = new int[26];
+        int[] chars = new int[3];
 
         int bestCountChars = 0;
         int bestMaxCharsInGroup = 0;
-        int[] bestChars = new int[26];
+        int[] bestChars = new int[3];
 
         int result = 0;
 
@@ -28,7 +39,7 @@ class Solution {
                 if (bestCountChars < countChars && allCharsCountEquals(chars, maxCharsInGroup)) {
                     bestCountChars = countChars;
                     bestMaxCharsInGroup = maxCharsInGroup;
-                    bestChars = Arrays.copyOf(chars, chars.length);
+                    System.arraycopy(chars, 0, bestChars, 0, chars.length);
                     result = max(result, bestCountChars);
                 }
 
@@ -39,6 +50,8 @@ class Solution {
                 leftIndex++;
                 continue;
             }
+
+            if (s.length() - leftIndex + 1 <= result) break;
 
             rightIndex = leftIndex + bestCountChars;
 
@@ -53,7 +66,7 @@ class Solution {
 
             countChars = bestCountChars;
             maxCharsInGroup = bestMaxCharsInGroup;
-            chars = Arrays.copyOf(bestChars, bestChars.length);
+            System.arraycopy(bestChars, 0, chars, 0, bestChars.length);
 
         }
 
@@ -79,8 +92,7 @@ class Solution {
     }
 
     private boolean allCharsCountEquals(int[] chars, int count) {
-        for (int c : chars) if (c != 0 && c != count) return false;
-        return true;
+        return chars[0] == chars[1] && chars[2] == count;
     }
 
     private int max(int a, int b) {

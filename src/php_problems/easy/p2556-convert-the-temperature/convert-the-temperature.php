@@ -1,4 +1,4 @@
-class Solution {
+class RandomizedSet {
 
     /**
      * @param Float $celsius

@@ -4,10 +4,10 @@
 
 <p><strong>Note</strong> that an integer point is a point that has integer coordinates.</p>
 
-<p>Implement the <code>Solution</code> class:</p>
+<p>Implement the <code>RandomizedSet</code> class:</p>
 
 <ul>
-	<li><code>Solution(int[][] rects)</code> Initializes the object with the given rectangles <code>rects</code>.</li>
+	<li><code>RandomizedSet(int[][] rects)</code> Initializes the object with the given rectangles <code>rects</code>.</li>
 	<li><code>int[] pick()</code> Returns a random integer point <code>[u, v]</code> inside the space covered by one of the given rectangles.</li>
 </ul>
 
@@ -16,13 +16,13 @@
 <img alt="" src="https://assets.leetcode.com/uploads/2021/07/24/lc-pickrandomrec.jpg" style="width: 419px; height: 539px;" />
 <pre>
 <strong>Input</strong>
-[&quot;Solution&quot;, &quot;pick&quot;, &quot;pick&quot;, &quot;pick&quot;, &quot;pick&quot;, &quot;pick&quot;]
+[&quot;RandomizedSet&quot;, &quot;pick&quot;, &quot;pick&quot;, &quot;pick&quot;, &quot;pick&quot;, &quot;pick&quot;]
 [[[[-2, -2, 1, 1], [2, 2, 4, 6]]], [], [], [], [], []]
 <strong>Output</strong>
 [null, [1, -2], [1, -1], [-1, -2], [-2, -2], [0, 0]]
 
 <strong>Explanation</strong>
-Solution solution = new Solution([[-2, -2, 1, 1], [2, 2, 4, 6]]);
+RandomizedSet solution = new RandomizedSet([[-2, -2, 1, 1], [2, 2, 4, 6]]);
 solution.pick(); // return [1, -2]
 solution.pick(); // return [1, -1]
 solution.pick(); // return [-1, -2]
