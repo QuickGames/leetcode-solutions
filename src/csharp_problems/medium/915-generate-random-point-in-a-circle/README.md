@@ -1,9 +1,9 @@
 <h2><a href="https://leetcode.com/problems/generate-random-point-in-a-circle">Generate Random Point in a Circle</a></h2> <img src='https://img.shields.io/badge/Difficulty-Medium-orange' alt='Difficulty: Medium' /><hr><p>Given the radius and the position of the center of a circle, implement the function <code>randPoint</code> which generates a uniform random point inside the circle.</p>
 
-<p>Implement the <code>RandomizedSet</code> class:</p>
+<p>Implement the <code>Solution</code> class:</p>
 
 <ul>
-	<li><code>RandomizedSet(double radius, double x_center, double y_center)</code> initializes the object with the radius of the circle <code>radius</code> and the position of the center <code>(x_center, y_center)</code>.</li>
+	<li><code>Solution(double radius, double x_center, double y_center)</code> initializes the object with the radius of the circle <code>radius</code> and the position of the center <code>(x_center, y_center)</code>.</li>
 	<li><code>randPoint()</code> returns a random point inside the circle. A point on the circumference of the circle is considered to be in the circle. The answer is returned as an array <code>[x, y]</code>.</li>
 </ul>
 
@@ -12,13 +12,13 @@
 
 <pre>
 <strong>Input</strong>
-[&quot;RandomizedSet&quot;, &quot;randPoint&quot;, &quot;randPoint&quot;, &quot;randPoint&quot;]
+[&quot;Solution&quot;, &quot;randPoint&quot;, &quot;randPoint&quot;, &quot;randPoint&quot;]
 [[1.0, 0.0, 0.0], [], [], []]
 <strong>Output</strong>
 [null, [-0.02493, -0.38077], [0.82314, 0.38945], [0.36572, 0.17248]]
 
 <strong>Explanation</strong>
-RandomizedSet solution = new RandomizedSet(1.0, 0.0, 0.0);
+Solution solution = new Solution(1.0, 0.0, 0.0);
 solution.randPoint(); // return [-0.02493, -0.38077]
 solution.randPoint(); // return [0.82314, 0.38945]
 solution.randPoint(); // return [0.36572, 0.17248]

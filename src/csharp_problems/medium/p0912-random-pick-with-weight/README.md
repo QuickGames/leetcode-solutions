@@ -11,13 +11,13 @@
 
 <pre>
 <strong>Input</strong>
-[&quot;RandomizedSet&quot;,&quot;pickIndex&quot;]
+[&quot;Solution&quot;,&quot;pickIndex&quot;]
 [[[1]],[]]
 <strong>Output</strong>
 [null,0]
 
 <strong>Explanation</strong>
-RandomizedSet solution = new RandomizedSet([1]);
+Solution solution = new Solution([1]);
 solution.pickIndex(); // return 0. The only option is to return 0 since there is only one element in w.
 </pre>
 
@@ -25,13 +25,13 @@ solution.pickIndex(); // return 0. The only option is to return 0 since there is
 
 <pre>
 <strong>Input</strong>
-[&quot;RandomizedSet&quot;,&quot;pickIndex&quot;,&quot;pickIndex&quot;,&quot;pickIndex&quot;,&quot;pickIndex&quot;,&quot;pickIndex&quot;]
+[&quot;Solution&quot;,&quot;pickIndex&quot;,&quot;pickIndex&quot;,&quot;pickIndex&quot;,&quot;pickIndex&quot;,&quot;pickIndex&quot;]
 [[[1,3]],[],[],[],[],[]]
 <strong>Output</strong>
 [null,1,1,1,1,0]
 
 <strong>Explanation</strong>
-RandomizedSet solution = new RandomizedSet([1, 3]);
+Solution solution = new Solution([1, 3]);
 solution.pickIndex(); // return 1. It is returning the second element (index = 1) that has a probability of 3/4.
 solution.pickIndex(); // return 1
 solution.pickIndex(); // return 1
