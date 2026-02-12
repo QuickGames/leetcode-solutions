@@ -1,4 +1,4 @@
-package java_problems.hard.p3721;
+package java_problems.hard.p4047_longest_balanced_subarray_ii;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;

@@ -1,3 +1,17 @@
+package java_problems.medium.p0914_random_point_in_non_overlapping_rectangles;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
+/**
+ * @author QuickGames
+ * Difficulty: Medium
+ * Number: 497
+ * Title: Random Point in Non-overlapping Rectangles
+ * Language: Java
+ * Topic: Array, Math, Binary Search, Reservoir Sampling, Prefix Sum, Ordered Set, Randomized
+ */
 class Solution {
 
     private class Rect {
@@ -39,7 +53,7 @@ class Solution {
     private final long weightAll;
 
     public Solution(int[][] rects) {
-        this.random = new Random(1);
+        this.random = new Random();
         this.rects = new ArrayList<>();
         long weightAll = 0;
         for (int[] coords : rects) {
@@ -62,11 +76,5 @@ class Solution {
 
         return new int[]{0, 0};
     }
-    
-}
 
-/**
- * Your Solution object will be instantiated and called as such:
- * Solution obj = new Solution(rects);
- * int[] param_1 = obj.pick();
- */
+}
