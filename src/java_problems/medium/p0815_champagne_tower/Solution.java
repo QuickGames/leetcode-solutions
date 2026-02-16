@@ -1,6 +1,17 @@
+package java_problems.medium.p0815_champagne_tower;
+
+/**
+ * @author QuickGames
+ * Difficulty: Medium
+ * Number: 799
+ * Title: Champagne Tower
+ * Language: Java
+ * Topic: Principal, Dynamic Programming, Weekly Contest 75
+ */
 class Solution {
+
     public double champagneTower(int poured, int query_row, int query_glass) {
-        
+
         if (query_row == 0 && query_glass == 0){
             if (1d < poured) return 1d;
             return poured;
@@ -31,4 +42,5 @@ class Solution {
 
         return poured;
     }
+
 }

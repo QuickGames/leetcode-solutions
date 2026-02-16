@@ -1,4 +1,4 @@
-package java_problems.easy.p3010;
+package java_problems.easy.p3263_divide_an_array_into_subarrays_with_minimum_cost_i;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;

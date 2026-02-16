@@ -1,6 +1,17 @@
+package java_problems.easy.p0067_add_binary;
+
+/**
+ * @author QuickGames
+ * Difficulty: Easy
+ * Number: 67
+ * Title: Add Binary
+ * Language: Java
+ * Topic: Math, String, Bit Manipulation, Simulation
+ */
 class Solution {
+
     public String addBinary(String a, String b) {
-        
+
         int maxLength = a.length() < b.length() ? b.length() : a.length();
         int aAdd = a.length() - maxLength;
         int bAdd = b.length() - maxLength;
@@ -27,4 +38,5 @@ class Solution {
 
         return sb.toString();
     }
+
 }

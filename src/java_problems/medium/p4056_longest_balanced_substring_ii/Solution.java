@@ -1,3 +1,15 @@
+package java_problems.medium.p4056_longest_balanced_substring_ii;
+
+import java.util.HashMap;
+
+/**
+ * @author QuickGames
+ * Difficulty: Medium
+ * Number: 3714
+ * Title: Longest Balanced Substring II
+ * Language: Java
+ * Topic: Staff, Hash Table, String, Prefix Sum, Weekly Contest 471
+ */
 class Solution {
 
     public int longestBalanced(String s) {

@@ -1,6 +1,17 @@
+package java_problems.easy.p3263_divide_an_array_into_subarrays_with_minimum_cost_i;
+
+/**
+ * @author QuickGames
+ * Difficulty: Easy
+ * Number: 3010
+ * Title: Divide an Array Into Subarrays With Minimum Cost I
+ * Language: Java
+ * Topic: Mid Level, Array, Sorting, Enumeration, Biweekly Contest 122
+ */
 class Solution {
+
     public int minimumCost(int[] nums) {
-        
+
         if (nums.length == 3) return nums[0] + nums[1] + nums[2];
 
         int min1 = nums[1];
@@ -18,4 +29,5 @@ class Solution {
 
         return nums[0] + min1 + min2;
     }
+
 }
