@@ -1,3 +1,5 @@
+package java_problems.medium.p2470_removing_stars_from_a_string;
+
 class Solution {
     public String removeStars(String s) {
         StringBuilder sb = new StringBuilder();

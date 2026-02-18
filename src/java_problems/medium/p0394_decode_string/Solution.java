@@ -1,5 +1,15 @@
+package java_problems.medium.p0394_decode_string;
+
+/**
+ * @author QuickGames
+ * Difficulty: Medium
+ * Number: 394
+ * Title: Decode String
+ * Language: Java
+ * Topic: Junior, String, Stack, Recursion
+ */
 class Solution {
-    
+
     private int index;
 
     public String decodeString(String s) {
@@ -26,3 +36,10 @@ class Solution {
     }
 
 }
+
+/*
+  Your Solution object will be instantiated and called as such:
+  Solution obj = new Solution(m, n);
+  int[] param_1 = obj.flip();
+  obj.reset();
+ */

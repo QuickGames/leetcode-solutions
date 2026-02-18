@@ -1,3 +1,17 @@
+package java_problems.easy.p0401_binary_watch;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+/**
+ * @author QuickGames
+ * Difficulty: Easy
+ * Number: 401
+ * Title: Binary Watch
+ * Language: Java
+ * Topic: Junior, Backtracking, Bit Manipulation
+ */
 class Solution {
 
     private static class Watch {
@@ -150,3 +164,10 @@ class Solution {
     }
 
 }
+
+/*
+  Your Solution object will be instantiated and called as such:
+  Solution obj = new Solution(m, n);
+  int[] param_1 = obj.flip();
+  obj.reset();
+ */

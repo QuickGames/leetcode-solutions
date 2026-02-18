@@ -1,3 +1,17 @@
+package java_problems.medium.p0913_random_flip_matrix;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
+/**
+ * @author QuickGames
+ * Difficulty: Medium
+ * Number: 519
+ * Title: Random Flip Matrix
+ * Language: Java
+ * Topic: Hash Table, Math, Reservoir Sampling, Randomized
+ */
 class Solution {
 
     private final Random random;
@@ -43,9 +57,9 @@ class Solution {
 
 }
 
-/**
- * Your Solution object will be instantiated and called as such:
- * Solution obj = new Solution(m, n);
- * int[] param_1 = obj.flip();
- * obj.reset();
+/*
+  Your Solution object will be instantiated and called as such:
+  Solution obj = new Solution(m, n);
+  int[] param_1 = obj.flip();
+  obj.reset();
  */
