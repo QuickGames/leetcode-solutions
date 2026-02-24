@@ -1,3 +1,5 @@
+package java_problems.easy.p0338_counting_bits;
+
 class Solution {
     public int[] countBits(int n) {
         int[] result = new int[n+1];

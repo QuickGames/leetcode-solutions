@@ -69,7 +69,7 @@ class SolutionTest {
     }
 
     static Stream<Arguments> largeArrayProvider983() throws IOException {
-        return getLargeArrayProvider("test/java_problems/hard/p3721/data983.csv");
+        return getLargeArrayProvider("test/java_problems/hard/p4047_longest_balanced_subarray_ii/data983.csv");
     }
 
     @ParameterizedTest
@@ -80,7 +80,7 @@ class SolutionTest {
     }
 
     static Stream<Arguments> largeArrayProvider987() throws IOException {
-        return getLargeArrayProvider("test/java_problems/hard/p3721/data987.csv");
+        return getLargeArrayProvider("test/java_problems/hard/p4047_longest_balanced_subarray_ii/data987.csv");
     }
 
     @ParameterizedTest
@@ -91,7 +91,7 @@ class SolutionTest {
     }
 
     static Stream<Arguments> largeArrayProvider991() throws IOException {
-        return getLargeArrayProvider("test/java_problems/hard/p3721/data991.csv");
+        return getLargeArrayProvider("test/java_problems/hard/p4047_longest_balanced_subarray_ii/data991.csv");
     }
 
     @ParameterizedTest
@@ -102,7 +102,7 @@ class SolutionTest {
     }
 
     static Stream<Arguments> largeArrayProvider993() throws IOException {
-        return getLargeArrayProvider("test/java_problems/hard/p3721/data993.csv");
+        return getLargeArrayProvider("test/java_problems/hard/p4047_longest_balanced_subarray_ii/data993.csv");
     }
 
     @ParameterizedTest
@@ -113,7 +113,7 @@ class SolutionTest {
     }
 
     static Stream<Arguments> largeArrayProvider995() throws IOException {
-        return getLargeArrayProvider("test/java_problems/hard/p3721/data995.csv");
+        return getLargeArrayProvider("test/java_problems/hard/p4047_longest_balanced_subarray_ii/data995.csv");
     }
 
     @ParameterizedTest

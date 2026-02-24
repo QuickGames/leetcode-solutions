@@ -1,20 +1,18 @@
+package java_problems.medium.p0199_binary_tree_right_side_view;
+
+import java.util.ArrayList;
+import java.util.List;
+
 /**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
- * }
+ * @author QuickGames
+ * Difficulty: Medium
+ * Number: 199
+ * Title: Binary Tree Right Side View
+ * Language: Java
+ * Topic: Tree, Depth-First Search, Breadth-First Search, Binary Tree
  */
 class Solution {
-    
+
     private int maxDepth;
 
     public List<Integer> rightSideView(TreeNode root) {

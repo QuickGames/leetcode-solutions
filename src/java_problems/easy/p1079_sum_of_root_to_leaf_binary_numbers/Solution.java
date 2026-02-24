@@ -1,17 +1,12 @@
+package java_problems.easy.p1079_sum_of_root_to_leaf_binary_numbers;
+
 /**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
- * }
+ * @author QuickGames
+ * Difficulty: Easy
+ * Number: 1022
+ * Title: Sum of Root To Leaf Binary Numbers
+ * Language: Java
+ * Topic: Staff, Tree, Depth-First Search, Binary Tree, Weekly Contest 131
  */
 class Solution {
 

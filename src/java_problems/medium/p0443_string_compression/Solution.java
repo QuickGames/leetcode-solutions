@@ -1,3 +1,13 @@
+package java_problems.medium.p0443_string_compression;
+
+/**
+ * @author QuickGames
+ * Difficulty: Medium
+ * Number: 443
+ * Title: String Compression
+ * Language: Java
+ * Topic: Senior, Two Pointers, String
+ */
 class Solution {
 
     public int compress(char[] chars) {

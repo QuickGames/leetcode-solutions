@@ -1,3 +1,13 @@
+package java_problems.easy.p0696_count_binary_substrings;
+
+/**
+ * @author QuickGames
+ * Difficulty: Easy
+ * Number: 696
+ * Title: Count Binary Substrings
+ * Language: Java
+ * Topic: Staff, Two Pointers, String
+ */
 class Solution {
 
     public int countBinarySubstrings(String s) {
@@ -16,11 +26,8 @@ class Solution {
                     else c1++;
                 } else {
                     result += min(c0, c1);
-                    if (c == '0') {
-                        c0 = 1;
-                    } else {
-                        c1 = 1;
-                    }
+                    if (c == '0') c0 = 1;
+                    else c1 = 1;
                 }
             } else {
                 if (c == '0') c0++;
@@ -37,5 +44,5 @@ class Solution {
     private int min(int a, int b) {
         return a < b ? a : b;
     }
-    
+
 }

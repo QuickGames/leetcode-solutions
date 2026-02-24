@@ -43,7 +43,7 @@ class SolutionTest {
     }
 
     static Stream<Arguments> largeArrayProvider983() throws IOException {
-        return getLargeArrayProvider("test/java_problems/medium/p3714/data986.csv", 15828);
+        return getLargeArrayProvider("test/java_problems/medium/p4056_longest_balanced_substring_ii/data986.csv", 15828);
     }
 
     @ParameterizedTest
@@ -54,7 +54,7 @@ class SolutionTest {
     }
 
     static Stream<Arguments> largeArrayProvider992() throws IOException {
-        return getLargeArrayProvider("test/java_problems/medium/p3714/data992.csv", 99999);
+        return getLargeArrayProvider("test/java_problems/medium/p4056_longest_balanced_substring_ii/data992.csv", 99999);
     }
 
     @ParameterizedTest

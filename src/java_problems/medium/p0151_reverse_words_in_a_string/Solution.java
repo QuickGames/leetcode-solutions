@@ -1,3 +1,5 @@
+package java_problems.medium.p0151_reverse_words_in_a_string;
+
 class Solution {
     public String reverseWords(String s) {
         StringBuilder sb = new StringBuilder();
