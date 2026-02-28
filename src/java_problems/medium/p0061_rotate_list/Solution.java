@@ -1,15 +1,15 @@
+package java_problems.medium.p0061_rotate_list;
+
 /**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- * }
+ * @author QuickGames
+ * Difficulty: Medium
+ * Number: 61
+ * Title: Rotate List
+ * Language: Java
+ * Topic: Linked List, Two Pointers
  */
 class Solution {
-    
+
     public ListNode rotateRight(ListNode head, int k) {
         if (head == null || head.next == null || k == 0) return head;
 

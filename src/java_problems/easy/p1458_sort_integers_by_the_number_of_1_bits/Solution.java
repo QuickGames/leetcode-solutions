@@ -1,6 +1,16 @@
+package java_problems.easy.p1458_sort_integers_by_the_number_of_1_bits;
+
+/**
+ * @author QuickGames
+ * Difficulty: Easy
+ * Number: 1356
+ * Title: Sort Integers by The Number of 1 Bits
+ * Language: Java
+ * Topic: Mid Level, Array, Bit Manipulation, Sorting, Counting, Biweekly Contest 20
+ */
 class Solution {
-    
-    private class IntBinary {
+
+    private static class IntBinary {
 
         private final int value;
         private final int binaryCount1;

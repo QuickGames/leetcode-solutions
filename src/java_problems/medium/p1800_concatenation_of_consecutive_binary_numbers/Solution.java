@@ -1,5 +1,15 @@
+package java_problems.medium.p1800_concatenation_of_consecutive_binary_numbers;
+
+/**
+ * @author QuickGames
+ * Difficulty: Medium
+ * Number: 1680
+ * Title: Concatenation of Consecutive Binary Numbers
+ * Language: Java
+ * Topic: Staff, Math, Bit Manipulation, Simulation, Weekly Contest 218
+ */
 class Solution {
-    
+
     private static final int BITS_LENGTH = 32;
     private static final int MODULO = 1_000_000_007;
 
