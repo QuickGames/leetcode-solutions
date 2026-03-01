@@ -1,3 +1,13 @@
+package java_problems.medium.p0937_online_stock_span;
+
+/**
+ * @author QuickGames
+ * Difficulty: Medium
+ * Number: 901
+ * Title: Online Stock Span
+ * Language: Java
+ * Topic: Senior, Stack, Design, Monotonic Stack, Data Stream, Weekly Contest 101
+ */
 class StockSpanner {
 
     private final int[] prices;
@@ -19,11 +29,6 @@ class StockSpanner {
         length++;
         return result;
     }
+//  {null, 1, 1, 3, 4, 5, 6, 7, 8, 9, 10}
 
 }
-
-/**
- * Your StockSpanner object will be instantiated and called as such:
- * StockSpanner obj = new StockSpanner();
- * int param_1 = obj.next(price);
- */

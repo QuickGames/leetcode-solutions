@@ -1,3 +1,5 @@
+package java_problems.easy.p0345_reverse_vowels_of_a_string;
+
 class Solution {
     public String reverseVowels(String s) {
         int left = 0;

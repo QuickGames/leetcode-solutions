@@ -1,3 +1,5 @@
+package java_problems.easy.p0605_can_place_flowers;
+
 class Solution {
     public boolean canPlaceFlowers(int[] flowerbed, int n) {
         if (n == 0) return true;

@@ -1,3 +1,8 @@
+package java_problems.easy.p1528_kids_with_the_greatest_number_of_candies;
+
+import java.util.ArrayList;
+import java.util.List;
+
 class Solution {
     public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
         int max = 0;

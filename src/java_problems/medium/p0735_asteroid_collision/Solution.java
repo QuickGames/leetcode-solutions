@@ -1,5 +1,18 @@
+package java_problems.medium.p0735_asteroid_collision;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * @author QuickGames
+ * Difficulty: Medium
+ * Number: 735
+ * Title: Asteroid Collision
+ * Language: Java
+ * Topic: Staff, Array, Stack, Simulation, Weekly Contest 60
+ */
 class Solution {
-    
+
     public int[] asteroidCollision(int[] asteroids) {
         List<Integer> result = new ArrayList<>();
 
