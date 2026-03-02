@@ -1,5 +1,15 @@
+package java_problems.hard.p0329_longest_increasing_path_in_a_matrix;
+
+/**
+ * @author QuickGames
+ * Difficulty: Hard
+ * Number: 329
+ * Title: Longest Increasing Path in a Matrix
+ * Language: Java
+ * Topic: Array, Dynamic Programming, Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort, Memoization, Matrix
+ */
 class Solution {
-    
+
     private int[][] maxPath;
     private int[][] matrix;
 

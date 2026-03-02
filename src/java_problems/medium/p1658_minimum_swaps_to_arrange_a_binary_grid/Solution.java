@@ -1,5 +1,19 @@
+package java_problems.medium.p1658_minimum_swaps_to_arrange_a_binary_grid;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+/**
+ * @author QuickGames
+ * Difficulty: Medium
+ * Number: 1536
+ * Title: Minimum Swaps to Arrange a Binary Grid
+ * Language: Java
+ * Topic: Staff, Array, Greedy, Matrix, Weekly Contest 200
+ */
 class Solution {
-    
+
     private int result = 0;
 
     public int minSwaps(int[][] grid) {
@@ -66,6 +80,11 @@ class Solution {
 
         public List<Integer> getRows() {
             return rows;
+        }
+
+        @Override
+        public String toString() {
+            return minRow + Arrays.toString(rows.toArray());
         }
 
     }

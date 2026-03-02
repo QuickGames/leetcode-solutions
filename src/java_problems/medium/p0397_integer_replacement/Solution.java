@@ -1,5 +1,15 @@
+package java_problems.medium.p0397_integer_replacement;
+
+/**
+ * @author QuickGames
+ * Difficulty: Medium
+ * Number: 397
+ * Title: Integer Replacement
+ * Language: Java
+ * Topic: Junior, Dynamic Programming, Greedy, Bit Manipulation, Memoization
+ */
 class Solution {
-    
+
     public int integerReplacement(int n) {
         return longReplacement(n);
     }
