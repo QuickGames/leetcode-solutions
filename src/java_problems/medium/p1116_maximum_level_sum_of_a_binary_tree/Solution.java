@@ -1,20 +1,15 @@
+package java_problems.medium.p1116_maximum_level_sum_of_a_binary_tree;
+
 /**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
- * }
+ * @author QuickGames
+ * Difficulty: Medium
+ * Number: 1161
+ * Title: Maximum Level Sum of a Binary Tree
+ * Language: Java
+ * Topic: Senior, Tree, Depth-First Search, Breadth-First Search, Binary Tree, Weekly Contest 150
  */
 class Solution {
-    
+
     private int[] levels;
 
     public int maxLevelSum(TreeNode root) {

@@ -1,17 +1,12 @@
+package java_problems.medium.p2677_cousins_in_binary_tree_ii;
+
 /**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
- * }
+ * @author QuickGames
+ * Difficulty: Medium
+ * Number: 2641
+ * Title: Cousins in Binary Tree II
+ * Language: Java
+ * Topic: Staff, Hash Table, Tree, Depth-First Search, Breadth-First Search, Binary Tree, Biweekly Contest 102
  */
 class Solution {
 

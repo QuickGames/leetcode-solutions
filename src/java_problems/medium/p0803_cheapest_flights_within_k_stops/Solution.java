@@ -1,10 +1,21 @@
+package java_problems.medium.p0803_cheapest_flights_within_k_stops;
+
+/**
+ * @author QuickGames
+ * Difficulty: Medium
+ * Number: 787
+ * Title: Cheapest Flights Within K Stops
+ * Language: Java
+ * Topic: Principal, Dynamic Programming, Depth-First Search, Breadth-First Search, Graph Theory, Heap (Priority Queue), Shortest Path, Weekly Contest 72
+ */
 class Solution {
-    
+
     private int[][] flights;    // [from, to, price]
     private int dst;
     private int k;
 
     private int minPrice;
+    private int minOut = Integer.MAX_VALUE;
 
     public int findCheapestPrice(int n, int[][] flights, int src, int dst, int k) {
         this.flights = flights;
@@ -37,6 +48,10 @@ class Solution {
                 } else {
                     int curPrice = price + flight[2];
                     findPath(flight[1], curPrice, stops + 1);
+                    if (this.minPrice < minOut) {
+                        minOut = minPrice;
+                        System.out.println("path: " + minPrice);
+                    }
                 }
                 this.minPrice = Math.min(this.minPrice, path);
             }

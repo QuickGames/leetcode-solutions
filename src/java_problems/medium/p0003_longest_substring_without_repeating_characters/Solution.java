@@ -1,3 +1,13 @@
+package java_problems.medium.p0003_longest_substring_without_repeating_characters;
+
+/**
+ * @author QuickGames
+ * Difficulty: Medium
+ * Number: 3
+ * Title: Longest Substring Without Repeating Characters
+ * Language: Java
+ * Topic: Staff, Hash Table, String, Sliding Window
+ */
 class Solution {
 
     public int lengthOfLongestSubstring(String s) {

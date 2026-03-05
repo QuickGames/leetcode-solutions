@@ -1,3 +1,13 @@
+package java_problems.medium.p1667_find_kth_bit_in_nth_binary_string;
+
+/**
+ * @author QuickGames
+ * Difficulty: Medium
+ * Number: 1545
+ * Title: Find Kth Bit in Nth Binary String
+ * Language: Java
+ * Topic: Senior, String, Recursion, Simulation, Weekly Contest 201
+ */
 class Solution {
 
     public char findKthBit(int n, int k) {
