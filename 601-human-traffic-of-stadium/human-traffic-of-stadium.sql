@@ -1,15 +1,15 @@
-# Write your MySQL query statement below
-select s.id as id, s.visit_date as visit_date, s.people as people
-from (select id, visit_date, people from Stadium where 100 <= people) as s
-    left join (select id - 1 as id, 1 as ok from Stadium where 100 <= people) as sm1
-        on s.id = sm1.id
-    left join (select id - 2 as id, 1 as ok from Stadium where 100 <= people) as sm2
-        on s.id = sm2.id
-    left join (select id + 1 as id, 1 as ok from Stadium where 100 <= people) as sp1
-        on s.id = sp1.id
-    left join (select id + 2 as id, 1 as ok from Stadium where 100 <= people) as sp2
-        on s.id = sp2.id
-where (ifnull(sm2.ok, 0) = 1 and ifnull(sm1.ok, 0) = 1
-    or ifnull(sm1.ok, 0) = 1 and ifnull(sp1.ok, 0) = 1
-    or ifnull(sp1.ok, 0) = 1 and ifnull(sp2.ok, 0) = 1) = 1
-order by s.visit_date 
+/* Write your T-SQL query statement below */
+select s.*
+from Stadium as s
+    left join (select id - 2 id from Stadium where 100 <= people) m2
+        on s.id = m2.id
+    left join (select id - 1 id from Stadium where 100 <= people) m1
+        on s.id = m1.id
+    left join (select id + 1 id from Stadium where 100 <= people) p1
+        on s.id = p1.id
+    left join (select id + 2 id from Stadium where 100 <= people) p2
+        on s.id = p2.id
+where 100 <= s.people
+    and (m2.id is not null and m1.id is not null
+    or m1.id is not null and p1.id is not null
+    or p1.id is not null and p2.id is not null)
