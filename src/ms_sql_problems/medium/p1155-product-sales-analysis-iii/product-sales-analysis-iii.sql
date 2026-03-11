@@ -1,5 +1,5 @@
--- Write your PostgreSQL query statement below
-select sm.product_id, sm.min_year first_year, s.quantity, s.price
-from (select product_id, min(year) min_year from Sales group by product_id) sm
-    left join Sales s
-        on sm.product_id = s.product_id and sm.min_year = s.year
+/* Write your T-SQL query statement below */
+select p.product_id, p.first_year, s.quantity, s.price
+from (select product_id, min(Sales.year) as first_year from Sales group by product_id) as p
+    left join Sales as s
+        on p.product_id = s.product_id and p.first_year = s.year
