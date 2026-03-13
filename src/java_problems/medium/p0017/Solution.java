@@ -1,5 +1,18 @@
+package java_problems.medium.p0017;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * @author QuickGames
+ * Difficulty: Medium
+ * Number: 17
+ * Title: Letter Combinations of a Phone Number
+ * Language: Java
+ * Topic: Hash Table, String, Backtracking
+ */
 class Solution {
-    
+
     public List<String> letterCombinations(String digits) {
         List<String> result = new ArrayList<>();
         result.add("");

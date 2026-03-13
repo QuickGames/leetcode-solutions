@@ -1,5 +1,18 @@
+package java_problems.medium.p0022;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * @author QuickGames
+ * Difficulty: Medium
+ * Number: 22
+ * Title: Generate Parentheses
+ * Language: Java
+ * Topic: String, Dynamic Programming, Backtracking
+ */
 class Solution {
-    
+
     private void goThrough(Parenthes[] parentheses, int index, List<String> result) {
         for (int i = index; i < parentheses.length - 1; i++) {
             if (parentheses[i] == null) continue;

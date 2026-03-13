@@ -1,5 +1,15 @@
+package java_problems.medium.p2571;
+
+/**
+ * @author QuickGames
+ * Difficulty: Medium
+ * Number: 2571
+ * Title: Minimum Operations to Reduce an Integer to 0
+ * Language: Java
+ * Topic: Senior, Dynamic Programming, Greedy, Bit Manipulation, Weekly Contest 333
+ */
 class Solution {
-    
+
     public int minOperations(int n) {
         int result = 0;
         for (int i = 17; 0 <= i; i--) {

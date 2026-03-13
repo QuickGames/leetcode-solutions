@@ -1,15 +1,15 @@
+package java_problems.hard.p0023;
+
 /**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- * }
+ * @author QuickGames
+ * Difficulty: Hard
+ * Number: 23
+ * Title: Merge k Sorted Lists
+ * Language: Java
+ * Topic: Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort
  */
 class Solution {
-    
+
     public ListNode mergeKLists(ListNode[] lists) {
         ListNode[] nodes = new ListNode[10_000];
         int nodesCount = 0;

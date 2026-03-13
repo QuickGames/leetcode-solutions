@@ -1,3 +1,16 @@
+package java_problems.medium.p1386;
+
+import java.util.HashMap;
+import java.util.Map;
+
+/**
+ * @author QuickGames
+ * Difficulty: medium
+ * Number: 1386
+ * Title: Cinema Seat Allocation
+ * Language: Java
+ * Topic: Senior, Array, Hash Table, Greedy, Bit Manipulation, Biweekly Contest 22
+ */
 class Solution {
 
     public int maxNumberOfFamilies(int n, int[][] reservedSeats) {

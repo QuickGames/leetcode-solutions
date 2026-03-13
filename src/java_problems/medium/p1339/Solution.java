@@ -1,20 +1,20 @@
+package java_problems.medium.p1339;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 /**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
- * }
+ * @author QuickGames
+ * Difficulty: Medium
+ * Number: 1339
+ * Title: Maximum Product of Splitted Binary Tree
+ * Language: Java
+ * Topic: Staff, Tree, Depth-First Search, Binary Tree, Weekly Contest 174
  */
 class Solution {
-    
+
     private Map<TreeNode, Integer> nodesSums;
 
     public int maxProduct(TreeNode root) {
