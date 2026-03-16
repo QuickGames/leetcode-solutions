@@ -1,5 +1,19 @@
+package java_problems.medium.p0049;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+/**
+ * @author QuickGames
+ * @Difficulty: Medium
+ * @Number: 49
+ * @Title: Group Anagrams
+ * @Language: Java
+ * @Topic: Array, Hash Table, String, Sorting
+ */
 class Solution {
-    
+
     public List<List<String>> groupAnagrams(String[] strs) {
         List<List<String>> result = new ArrayList<>();
         List<int[]> keys = new ArrayList<>();

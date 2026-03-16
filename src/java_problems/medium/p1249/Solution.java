@@ -1,5 +1,15 @@
+package java_problems.medium.p1249;
+
+/**
+ * @author QuickGames
+ * @Difficulty: Medium
+ * @Number: 1249
+ * @Title: Minimum Remove to Make Valid Parentheses
+ * @Language: Java
+ * @Topic: Staff, String, Stack, Weekly Contest 161
+ */
 class Solution {
-    
+
     public String minRemoveToMakeValid(String s) {
 
         int[] forRemove = new int[s.length()];

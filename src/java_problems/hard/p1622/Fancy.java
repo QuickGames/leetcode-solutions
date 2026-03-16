@@ -1,3 +1,13 @@
+package java_problems.hard.p1622;
+
+/**
+ * @author QuickGames
+ * Difficulty: Hard
+ * Number: 1622
+ * Title: Fancy Sequence
+ * Language: Java
+ * Topic: Principal, Math, Design, Segment Tree, Biweekly Contest 37
+ */
 class Fancy {
 
     private static final int MODULO = 1_000_000_007;
@@ -34,12 +44,3 @@ class Fancy {
     }
 
 }
-
-/**
- * Your Fancy object will be instantiated and called as such:
- * Fancy obj = new Fancy();
- * obj.append(val);
- * obj.addAll(inc);
- * obj.multAll(m);
- * int param_4 = obj.getIndex(idx);
- */

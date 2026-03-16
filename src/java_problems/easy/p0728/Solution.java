@@ -1,5 +1,19 @@
+package java_problems.easy.p0728;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+/**
+ * @author QuickGames
+ * Difficulty: Medium
+ * Number: 728
+ * Title: Self Dividing Numbers
+ * Language: Java
+ * Topic: Mid Level, Math, Weekly Contest 59
+ */
 class Solution {
-    
+
     public List<Integer> selfDividingNumbers(int left, int right) {
         List<Integer> result = new ArrayList<>();
         for (int n = left; n <= right; n++) {

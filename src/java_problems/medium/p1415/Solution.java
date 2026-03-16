@@ -1,3 +1,13 @@
+package java_problems.medium.p1415;
+
+/**
+ * @author QuickGames
+ * Difficulty: Medium
+ * Number: 1415
+ * Title: The k-th Lexicographical String of All Happy Strings of Length n
+ * Language: Java
+ * Topic: Staff, String, Backtracking, Biweekly Contest 24
+ */
 class Solution {
 
     public String getHappyString(int n, int k) {
@@ -35,9 +45,8 @@ class Solution {
 
     private int pow2(int n) {
         int result = 1;
-        for (int i = 1; i <= n; i++) {
+        for (int i = 1; i <= n; i++)
             result *= 2;
-        }
         return result;
     }
 

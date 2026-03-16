@@ -1,5 +1,17 @@
+package java_problems.medium.p1878;
+
+import java.util.Arrays;
+
+/**
+ * @author QuickGames
+ * @Difficulty: Medium
+ * @Number: 1878
+ * @Title: Get Biggest Three Rhombus Sums in a Grid
+ * @Language: Java
+ * @Topic: Staff, Array, Math, Sorting, Heap (Priority Queue), Matrix, Prefix Sum, Biweekly Contest 53
+ */
 class Solution {
-    
+
     public int[] getBiggestThree(int[][] grid) {
         int[] result = new int[4];
 
