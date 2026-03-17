@@ -6,7 +6,6 @@ import org.junit.jupiter.api.DisplayName;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.Arrays;
 import java.util.Objects;
 
 @DisplayName("Solution Test Template")
@@ -17,7 +16,7 @@ public abstract class SolutionTestBase {
     private static void initPATH() {
         Class<?> clazz = StackWalker.getInstance(StackWalker.Option.RETAIN_CLASS_REFERENCE)
                 .walk(frames -> Objects.requireNonNull(frames
-                        .skip(2)
+                        .skip(3)
                         .filter(f -> !f.getDeclaringClass().equals(SolutionTestBase.class))
                         .findFirst()
                         .map(StackWalker.StackFrame::getDeclaringClass)
@@ -34,8 +33,12 @@ public abstract class SolutionTestBase {
         return PATH + path;
     }
 
+    protected static String readFileAsString(String path) throws IOException {
+        return Files.readString(Paths.get(getFullPath(path))).trim();
+    }
+
     protected static String[] readStringArray(String path) throws IOException {
-        String content = Files.readString(Paths.get(getFullPath(path)));
+        String content = readFileAsString(path);
         JSONArray jsonArray = new JSONArray(content);
         String[] array = new String[jsonArray.length()];
         for (int i = 0; i < jsonArray.length(); i++)
@@ -44,52 +47,48 @@ public abstract class SolutionTestBase {
     }
 
     protected static Integer[][] readIntegerGrid(String path) throws IOException {
-        String content = Files.readString(Paths.get(getFullPath(path))).trim();
-        String[] rows = content.substring(2, content.length() - 2).split("],\\[");
-        Integer[][] grid = new Integer[rows.length][];
-        for (int i = 0; i < rows.length; i++) {
-            grid[i] = Arrays.stream(rows[i].split(",", -1))
-                    .map(s -> s.isBlank() || s.equals("null") ? null : Integer.parseInt(s.trim()))
-                    .toArray(Integer[]::new);
+        String content = readFileAsString(path);
+        JSONArray jsonArray = new JSONArray(content);
+        Integer[][] grid = new Integer[jsonArray.length()][];
+        for (int i = 0; i < jsonArray.length(); i++) {
+            JSONArray array = jsonArray.getJSONArray(i);
+            Integer[] row = new Integer[array.length()];
+            for (int j = 0; j < array.length(); j++)
+                row[j] = array.optIntegerObject(j, null);
+            grid[i] = row;
         }
         return grid;
     }
 
     protected static int[][] readIntGrid(String path) throws IOException {
-        String content = Files.readString(Paths.get(getFullPath(path))).trim();
-        String[] rows = content.substring(2, content.length() - 2).split("],\\[");
-        int[][] grid = new int[rows.length][];
-        for (int i = 0; i < rows.length; i++) {
-            grid[i] = Arrays.stream(rows[i].split(","))
-                    .mapToInt(Integer::parseInt)
-                    .toArray();
+        String content = readFileAsString(path);
+        JSONArray jsonArray = new JSONArray(content);
+        int[][] grid = new int[jsonArray.length()][];
+        for (int i = 0; i < jsonArray.length(); i++) {
+            JSONArray array = jsonArray.getJSONArray(i);
+            int[] row = new int[array.length()];
+            for (int j = 0; j < array.length(); j++)
+                row[j] = array.getInt(j);
+            grid[i] = row;
         }
         return grid;
     }
 
     protected static int[] readIntArray(String path) throws IOException {
-        String content = Files.readString(Paths.get(getFullPath(path))).trim();
-        String raw = content.substring(1, content.length() - 1);
-        String[] parts = raw.split(",");
-
-        int[] result = new int[parts.length];
-        for (int i = 0; i < parts.length; i++) {
-            String val = parts[i].trim();
-            result[i] = Integer.parseInt(val);
-        }
+        String content = readFileAsString(path);
+        JSONArray jsonArray = new JSONArray(content);
+        int[] result = new int[jsonArray.length()];
+        for (int i = 0; i < jsonArray.length(); i++)
+            result[i] = jsonArray.getInt(i);
         return result;
     }
 
     protected static Integer[] readIntegerArray(String path) throws IOException {
-        String content = Files.readString(Paths.get(getFullPath(path))).trim();
-        String raw = content.substring(1, content.length() - 1);
-        String[] parts = raw.split(",");
-
-        Integer[] result = new Integer[parts.length];
-        for (int i = 0; i < parts.length; i++) {
-            String val = parts[i].trim();
-            result[i] = val.equals("null") ? null : Integer.parseInt(val);
-        }
+        String content = readFileAsString(path);
+        JSONArray jsonArray = new JSONArray(content);
+        Integer[] result = new Integer[jsonArray.length()];
+        for (int i = 0; i < jsonArray.length(); i++)
+            result[i] = jsonArray.optIntegerObject(i, null);
         return result;
     }
 

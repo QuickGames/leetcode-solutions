@@ -1,5 +1,15 @@
+package java_problems.medium.p1727;
+
+/**
+ * @author QuickGames
+ * @Difficulty: Medium
+ * @Number: 1727
+ * @Title: Largest Submatrix With Rearrangements
+ * @Language: Java
+ * @Topic: Staff, Array, Greedy, Sorting, Matrix, Weekly Contest 224
+ */
 class Solution {
-    
+
     public int largestSubmatrix(int[][] matrix) {
 
         int[][] counts = new int[matrix.length][matrix[0].length];
