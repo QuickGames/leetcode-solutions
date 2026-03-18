@@ -1,5 +1,18 @@
+package java_problems.hard.p0068;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * @author QuickGames
+ * @Difficulty: Hard
+ * @Number: 68
+ * @Title: Text Justification
+ * @Language: Java
+ * @Topic: Array, String, Simulation
+ */
 class Solution {
-    
+
     public List<String> fullJustify(String[] words, int maxWidth) {
         List<String> result = new ArrayList<>();
 

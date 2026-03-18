@@ -1,3 +1,13 @@
+package java_problems.medium.p3070;
+
+/**
+ * @author QuickGames
+ * @Difficulty: Medium
+ * @Number: 3070
+ * @Title: Count Submatrices with Top-Left Element and Sum Less Than k
+ * @Language: Java
+ * @Topic: Senior, Array, Matrix, Prefix Sum, Weekly Contest 387
+ */
 class Solution {
 
     public int countSubmatrices(int[][] grid, int k) {
