@@ -1,5 +1,15 @@
+package java_problems.medium.p2906;
+
+/**
+ * @author QuickGames
+ * @Difficulty: Medium
+ * @Number: 2906
+ * @Title: Construct Product Matrix
+ * @Language: Java
+ * @Topic: Staff, Array, Matrix, Prefix Sum, Weekly Contest 367
+ */
 class Solution {
-    
+
     public int[][] constructProductMatrix(int[][] grid) {
 
         int rows = grid.length;

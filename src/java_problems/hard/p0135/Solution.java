@@ -1,5 +1,15 @@
+package java_problems.hard.p0135;
+
+/**
+ * @author QuickGames
+ * @Difficulty: Hard
+ * @Number: 135
+ * @Title: Candy
+ * @Language: Java
+ * @Topic: Array, Greedy
+ */
 class Solution {
-    
+
     public int candy(int[] ratings) {
         int result = 0;
 

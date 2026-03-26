@@ -1,5 +1,17 @@
+package java_problems.medium.p0128;
+
+import java.util.Arrays;
+
+/**
+ * @author QuickGames
+ * @Difficulty: Medium
+ * @Number: 128
+ * @Title: Longest Consecutive Sequence
+ * @Language: Java
+ * @Topic: Array, Hash Table, Union-Find
+ */
 class Solution {
-    
+
     public int longestConsecutive(int[] nums) {
         if (nums.length == 0) return 0;
 

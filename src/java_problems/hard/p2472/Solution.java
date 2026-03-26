@@ -1,5 +1,15 @@
+package java_problems.hard.p2472;
+
+/**
+ * @author QuickGames
+ * @Difficulty: Hard
+ * @Number: 2472
+ * @Title: Maximum Number of Non-overlapping Palindrome Substrings
+ * @Language: Java
+ * @Topic: Senior Staff, Two Pointers, String, Dynamic Programming, Greedy, Weekly Contest 319
+ */
 class Solution {
-    
+
     public int maxPalindromes(String s, int k) {
         int[][] polis = new int[s.length() / k][2];
         int polisCount = 0;

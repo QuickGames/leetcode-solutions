@@ -1,5 +1,15 @@
+package java_problems.medium.p2672;
+
+/**
+ * @author QuickGames
+ * @Difficulty: Medium
+ * @Number: 2672
+ * @Title: Number of Adjacent Elements With the Same Color
+ * @Language: Java
+ * @Topic: Staff, Array, Weekly Contest 344
+ */
 class Solution {
-    
+
     public int[] colorTheArray(int n, int[][] queries) {
         if (queries.length == 1) return new int[]{0};
 

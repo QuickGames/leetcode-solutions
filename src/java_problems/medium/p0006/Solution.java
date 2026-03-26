@@ -1,4 +1,15 @@
+package java_problems.medium.p0006;
+
+/**
+ * @author QuickGames
+ * @Difficulty: Medium
+ * @Number: 6
+ * @Title: Zigzag Conversion
+ * @Language: Java
+ * @Topic: String
+ */
 class Solution {
+
     public String convert(String s, int numRows) {
         StringBuilder[] sb = new StringBuilder[numRows];
         for (int i = 0; i < sb.length; i++)
@@ -20,4 +31,5 @@ class Solution {
         for (StringBuilder sbi : sb) result.append(sbi);
         return result.toString();
     }
+
 }

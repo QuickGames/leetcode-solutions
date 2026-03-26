@@ -1,6 +1,17 @@
+package java_problems.medium.p1594;
+
+/**
+ * @author QuickGames
+ * @Difficulty: Medium
+ * @Number: 1594
+ * @Title: Maximum Non-Negative Product in a Matrix
+ * @Language: Java
+ * @Topic: Staff, Array, Dynamic Programming, Matrix, Weekly Contest 207
+ */
 class Solution {
+
     public int maxProductPath(int[][] grid) {
-        
+
         int rows = grid.length;
         int cols = grid[0].length;
 
@@ -47,6 +58,7 @@ class Solution {
         }
 
         long result = gridCache[rows - 1][cols - 1][0];
-        return result < 0 ? -1: (int) (result % 1_000_000_007);
+        return result < 0 ? -1 : (int) (result % 1_000_000_007);
     }
+
 }

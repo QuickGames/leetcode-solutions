@@ -1,4 +1,17 @@
+package java_problems.medium.p3567;
+
+import java.util.Arrays;
+
+/**
+ * @author QuickGames
+ * @Difficulty: Medium
+ * @Number: 3567
+ * @Title: Minimum Absolute Difference in Sliding Submatrix
+ * @Language: Java
+ * @Topic: Senior, Array, Sorting, Matrix, Weekly Contest 452
+ */
 class Solution {
+
     public int[][] minAbsDiff(int[][] grid, int k) {
 
         int rows = grid.length;
@@ -32,4 +45,5 @@ class Solution {
 
         return result;
     }
+
 }

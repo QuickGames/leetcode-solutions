@@ -1,3 +1,13 @@
+package java_problems.medium.p0005;
+
+/**
+ * @author QuickGames
+ * @Difficulty: Medium
+ * @Number: 5
+ * @Title: Longest Palindromic Substring
+ * @Language: Java
+ * @Topic: Two Pointers, String, Dynamic Programming
+ */
 class Solution {
 
     public String longestPalindrome(String s) {
