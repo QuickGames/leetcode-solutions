@@ -1,4 +1,19 @@
+package java_problems.medium.p1268;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+/**
+ * @author QuickGames
+ * @Difficulty: Medium
+ * @Number: 1268
+ * @Title: Search Suggestions System
+ * @Language: Java
+ * @Topic: Senior, Array, String, Binary Search, Trie, Sorting, Heap (Priority Queue), Weekly Contest 164
+ */
 class Solution {
+
     public List<List<String>> suggestedProducts(String[] products, String searchWord) {
         List<List<String>> result = new ArrayList<>();
 
@@ -18,4 +33,5 @@ class Solution {
 
         return result;
     }
+
 }

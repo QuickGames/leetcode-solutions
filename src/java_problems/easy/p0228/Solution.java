@@ -1,5 +1,18 @@
+package java_problems.easy.p0228;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * @author QuickGames
+ * @Difficulty: Easy
+ * @Number: 228
+ * @Title: Summary Ranges
+ * @Language: Java
+ * @Topic: Array
+ */
 class Solution {
-    
+
     public List<String> summaryRanges(int[] nums) {
         if (nums.length == 0) return new ArrayList<>();
 

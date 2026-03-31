@@ -1,1 +1,0 @@
-<h2>find-the-string-with-lcp Notes</h2><hr>[ Time taken: 1hr 25m 41s ]

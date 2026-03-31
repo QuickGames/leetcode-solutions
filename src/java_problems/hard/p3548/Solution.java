@@ -1,3 +1,13 @@
+package java_problems.hard.p3548;
+
+/**
+ * @author QuickGames
+ * @Difficulty: Hard
+ * @Number: 3548
+ * @Title: Equal Sum Grid Partition II
+ * @Language: Java
+ * @Topic: Principal, Array, Hash Table, Matrix, Enumeration, Prefix Sum, Weekly Contest 449
+ */
 class Solution {
 
     public boolean canPartitionGrid(int[][] grid) {

@@ -1,5 +1,15 @@
+package java_problems.hard.p2573;
+
+/**
+ * @author QuickGames
+ * @Difficulty: Hard
+ * @Number: 2573
+ * @Title: Find the String with LCP
+ * @Language: Java
+ * @Topic: Senior Staff, Array, String, Dynamic Programming, Greedy, Union-Find, Matrix, Weekly Contest 333
+ */
 class Solution {
-    
+
     public String findTheString(int[][] lcp) {
 
         char[] chars = new char[lcp.length];

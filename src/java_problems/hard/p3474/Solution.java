@@ -1,5 +1,15 @@
+package java_problems.hard.p3474;
+
+/**
+ * @author QuickGames
+ * @Difficulty: Hard
+ * @Number: 3474
+ * @Title: Lexicographically Smallest Generated String
+ * @Language: Java
+ * @Topic: Principal, String, Greedy, String Matching, Weekly Contest 439
+ */
 class Solution {
-    
+
     public String generateString(String str1, String str2) {
         char[] result = new char[str1.length() + str2.length() - 1];
         boolean[] isFinal = new boolean[result.length];

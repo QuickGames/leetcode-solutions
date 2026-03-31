@@ -1,4 +1,16 @@
-class LFUCache {
+package java_problems.hard.p0460;
+
+import java.util.Arrays;
+
+/**
+ * @author QuickGames
+ * @Difficulty: Hard
+ * @Number: 460
+ * @Title: LFU Cache
+ * @Language: Java
+ * @Topic: Hash Table, Linked List, Design, Doubly-Linked List
+ */
+public class LFUCache {
 
     private final int capacity;
     private final int[] keyAddresses;
@@ -83,9 +95,3 @@ class LFUCache {
     }
 
 }
-/**
- * Your LFUCache object will be instantiated and called as such:
- * LFUCache obj = new LFUCache(capacity);
- * int param_1 = obj.get(key);
- * obj.put(key,value);
- */

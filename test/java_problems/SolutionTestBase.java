@@ -11,7 +11,7 @@ import java.util.Objects;
 @DisplayName("Solution Test Template")
 public abstract class SolutionTestBase {
 
-    protected static String PATH = "";
+    private static String PATH = "";
 
     private static void initPATH() {
         Class<?> clazz = StackWalker.getInstance(StackWalker.Option.RETAIN_CLASS_REFERENCE)
@@ -28,9 +28,13 @@ public abstract class SolutionTestBase {
         PATH = pathPart;
     }
 
-    protected static String getFullPath(String path) {
+    protected static String getPATH() {
         if (PATH.isEmpty()) initPATH();
-        return PATH + path;
+        return PATH;
+    }
+
+    protected static String getFullPath(String path) {
+        return getPATH() + path;
     }
 
     protected static String readFileAsString(String path) throws IOException {
@@ -44,6 +48,20 @@ public abstract class SolutionTestBase {
         for (int i = 0; i < jsonArray.length(); i++)
             array[i] = jsonArray.getString(i);
         return array;
+    }
+
+    protected static String[][] readStringGrid(String path) throws IOException {
+        String content = readFileAsString(path);
+        JSONArray jsonArray = new JSONArray(content);
+        String[][] grid = new String[jsonArray.length()][];
+        for (int i = 0; i < jsonArray.length(); i++) {
+            JSONArray array = jsonArray.getJSONArray(i);
+            String[] row = new String[array.length()];
+            for (int j = 0; j < array.length(); j++)
+                row[j] = array.getString(j);
+            grid[i] = row;
+        }
+        return grid;
     }
 
     protected static Integer[][] readIntegerGrid(String path) throws IOException {
