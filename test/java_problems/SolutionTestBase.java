@@ -1,6 +1,7 @@
 package java_problems;
 
 import org.json.JSONArray;
+import org.json.JSONObject;
 import org.junit.jupiter.api.DisplayName;
 
 import java.io.IOException;
@@ -34,7 +35,7 @@ public abstract class SolutionTestBase {
     }
 
     protected static String getFullPath(String path) {
-        return getPATH() + path;
+        return getPATH() + path + ".lctd";
     }
 
     protected static String readFileAsString(String path) throws IOException {
@@ -46,7 +47,7 @@ public abstract class SolutionTestBase {
         JSONArray jsonArray = new JSONArray(content);
         String[] array = new String[jsonArray.length()];
         for (int i = 0; i < jsonArray.length(); i++)
-            array[i] = jsonArray.getString(i);
+            array[i] = jsonArray.optString(i, null);
         return array;
     }
 
@@ -58,7 +59,7 @@ public abstract class SolutionTestBase {
             JSONArray array = jsonArray.getJSONArray(i);
             String[] row = new String[array.length()];
             for (int j = 0; j < array.length(); j++)
-                row[j] = array.getString(j);
+                row[j] = array.optString(i, null);
             grid[i] = row;
         }
         return grid;
@@ -107,6 +108,26 @@ public abstract class SolutionTestBase {
         Integer[] result = new Integer[jsonArray.length()];
         for (int i = 0; i < jsonArray.length(); i++)
             result[i] = jsonArray.optIntegerObject(i, null);
+        return result;
+    }
+
+    protected static Boolean[] readBooleanArray(String path) throws IOException {
+        String content = readFileAsString(path);
+        JSONArray jsonArray = new JSONArray(content);
+        Boolean[] result = new Boolean[jsonArray.length()];
+        for (int i = 0; i < jsonArray.length(); i++)
+            result[i] = jsonArray.optBooleanObject(i, null);
+        return result;
+    }
+
+    protected static Object[] readObjectArray(String path) throws IOException {
+        String content = readFileAsString(path);
+        JSONArray jsonArray = new JSONArray(content);
+        Object[] result = new Object[jsonArray.length()];
+        for (int i = 0; i < jsonArray.length(); i++) {
+            Object object = jsonArray.opt(i);
+            result[i] = (object == JSONObject.NULL ? null : object);
+        }
         return result;
     }
 

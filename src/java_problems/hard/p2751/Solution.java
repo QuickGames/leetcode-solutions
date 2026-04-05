@@ -1,5 +1,20 @@
+package java_problems.hard.p2751;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
+
+/**
+ * @author QuickGames
+ * @Difficulty: Hard
+ * @Number: 2751
+ * @Title: Robot Collisions
+ * @Language: Java
+ * @Topic: Senior Staff, Array, Stack, Sorting, Simulation, Weekly Contest 351
+ */
 class Solution {
-    
+
     public List<Integer> survivedRobotsHealths(int[] positions, int[] healths, String directions) {
         // [][0] - index.
         // [][1] - position.

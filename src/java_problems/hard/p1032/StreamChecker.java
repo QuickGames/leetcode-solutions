@@ -1,3 +1,17 @@
+package java_problems.hard.p1032;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+/**
+ * @author QuickGames
+ * @Difficulty: Hard
+ * @Number: 1032
+ * @Title: Stream of Characters
+ * @Language: Java
+ * @Topic: Principal, Array, String, Design, Trie, Data Stream, Weekly Contest 133
+ */
 class StreamChecker {
 
     private static class Graph {
@@ -52,9 +66,3 @@ class StreamChecker {
     }
 
 }
-
-/**
- * Your StreamChecker object will be instantiated and called as such:
- * StreamChecker obj = new StreamChecker(words);
- * boolean param_1 = obj.query(letter);
- */

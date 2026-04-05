@@ -1,3 +1,16 @@
+package java_problems.hard.p0352;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * @author QuickGames
+ * @Difficulty: Hard
+ * @Number: 352
+ * @Title: Data Stream as Disjoint Intervals
+ * @Language: Java
+ * @Topic: Hash Table, Binary Search, Union-Find, Design, Data Stream, Ordered Set
+ */
 class SummaryRanges {
 
     private final boolean[] values;
@@ -40,10 +53,3 @@ class SummaryRanges {
     }
 
 }
-
-/**
- * Your SummaryRanges object will be instantiated and called as such:
- * SummaryRanges obj = new SummaryRanges();
- * obj.addNum(value);
- * int[][] param_2 = obj.getIntervals();
- */

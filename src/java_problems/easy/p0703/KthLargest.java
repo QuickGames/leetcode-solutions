@@ -1,3 +1,15 @@
+package java_problems.easy.p0703;
+
+import java.util.Arrays;
+
+/**
+ * @author QuickGames
+ * @Difficulty: Easy
+ * @Number: 703
+ * @Title: Kth Largest Element in a Stream
+ * @Language: Java
+ * @Topic: Tree, Design, Binary Search Tree, Heap (Priority Queue), Binary Tree, Data Stream
+ */
 class KthLargest {
 
     private final int kIndex;
@@ -21,9 +33,3 @@ class KthLargest {
     }
 
 }
-
-/**
- * Your KthLargest object will be instantiated and called as such:
- * KthLargest obj = new KthLargest(k, nums);
- * int param_1 = obj.add(val);
- */

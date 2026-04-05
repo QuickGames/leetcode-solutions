@@ -1,3 +1,13 @@
+package java_problems.medium.p2336;
+
+/**
+ * @author QuickGames
+ * @Difficulty: Medium
+ * @Number: 2336
+ * @Title: Smallest Number in Infinite Set
+ * @Language: Java
+ * @Topic: Senior, Hash Table, Design, Heap (Priority Queue), Ordered Set, Weekly Contest 301
+ */
 class SmallestInfiniteSet {
 
     private int min;
@@ -28,10 +38,3 @@ class SmallestInfiniteSet {
     }
 
 }
-
-/**
- * Your SmallestInfiniteSet object will be instantiated and called as such:
- * SmallestInfiniteSet obj = new SmallestInfiniteSet();
- * int param_1 = obj.popSmallest();
- * obj.addBack(num);
- */

@@ -1,3 +1,17 @@
+package java_problems.hard.p0381;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Random;
+
+/**
+ * @author QuickGames
+ * @Difficulty: Hard
+ * @Number: 381
+ * @Title: Insert Delete GetRandom O(1) - Duplicates allowed
+ * @Language: Java
+ * @Topic: Array, Hash Table, Math, Design, Randomized
+ */
 class RandomizedCollection {
 
     private static class RCValue {
@@ -101,11 +115,3 @@ class RandomizedCollection {
     }
 
 }
-
-/**
- * Your RandomizedCollection object will be instantiated and called as such:
- * RandomizedCollection obj = new RandomizedCollection();
- * boolean param_1 = obj.insert(val);
- * boolean param_2 = obj.remove(val);
- * int param_3 = obj.getRandom();
- */
