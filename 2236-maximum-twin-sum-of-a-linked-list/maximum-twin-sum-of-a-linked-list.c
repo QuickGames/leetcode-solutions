@@ -6,18 +6,18 @@
  * };
  */
 int pairSum(struct ListNode* head) {
-    struct ListNode* nodes[100000];
-    int nodesSize = 0;
+    int values[100000];
+    int valuesSize = 0;
     struct ListNode* node = head;
     while (node) {
-        nodes[nodesSize++] = node;
+        values[valuesSize++] = node->val;
         node = node->next;
     }
-    int nodesSize2 = nodesSize / 2;
-    int nodesSize1 = nodesSize - 1;
+    int valuesSize2 = valuesSize / 2;
+    int valuesSize1 = valuesSize - 1;
     int result = 0;
-    for (int i = 0; i < nodesSize2; i++) {
-        int sum = nodes[i]->val + nodes[nodesSize1 - i]->val;
+    for (int i = 0; i < valuesSize2; i++) {
+        int sum = values[i] + values[valuesSize1 - i];
         if (result < sum) result = sum;
     }
     return result;
